@@ -77,6 +77,8 @@ brew install gpg
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 \curl -sSL https://get.rvm.io | bash -s stable
 
+rvm install 2.3.1
+
 echo
 echo "+-------------------------+"
 echo "| Installing apps...      |"
@@ -109,6 +111,7 @@ brew cask install sequel-pro
 brew cask install skype
 brew cask install slack
 brew cask install sublime-text3
+brew cask install intellij-idea-ce
 brew cask install suspicious-package
 brew cask install webpquicklook
 brew cask install dropbox
@@ -134,16 +137,7 @@ echo "| Setup Oh My Zsh... |"
 echo "+-------------------------+"
 echo
 
-
 chsh -s /bin/zsh
-
-echo
-echo "+-------------------------+"
-echo "| Installing Ruby...      |"
-echo "+-------------------------+"
-echo
-
-rvm install 2.3.1
 
 echo
 echo "+-------------------------+"
