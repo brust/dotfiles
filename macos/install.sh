@@ -94,7 +94,7 @@ brew install redis
 brew install speedtest_cli
 brew install leiningen
 
-brew cask install
+brew cask install 1password
 brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2
