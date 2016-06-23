@@ -116,6 +116,7 @@ brew cask install suspicious-package
 brew cask install webpquicklook
 brew cask install dropbox
 brew cask install viscosity
+brew cask install spotify
 
 mkdir -p ~/Library/LaunchAgents &> /dev/null
 
