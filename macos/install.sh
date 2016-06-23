@@ -115,6 +115,7 @@ brew cask install intellij-idea-ce
 brew cask install suspicious-package
 brew cask install webpquicklook
 brew cask install dropbox
+brew cask install viscosity
 
 mkdir -p ~/Library/LaunchAgents &> /dev/null
 
