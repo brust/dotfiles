@@ -10,8 +10,7 @@
   "draw_white_space": "all",
   "file_exclude_patterns": [
     ".DS_Store",
-    ".gitignore",
-    ".rspec"
+    ".gitignore"
   ],
   "folder_exclude_patterns": [
     ".sass-cache",
@@ -24,7 +23,7 @@
     "tmp",
     "CVS"
   ],
-  "font_size": 11,
+  "font_size": 15,
   "ignored_packages": [
     "Vintage"
   ],
