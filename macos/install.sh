@@ -87,48 +87,24 @@ echo
 
 brew install zsh
 brew install heroku-toolbelt
-brew install memcached
-brew install mysql56
 brew install postgresql94
 brew install redis
-brew install speedtest_cli
 brew install leiningen
+brew install nodejs
+brew install datomic
 
+brew cask install java
 brew cask install 1password
-brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install ngrok
 brew cask install postico
-brew cask install qlcolorcode
-brew cask install qlimagesize
-brew cask install qlmarkdown
-brew cask install qlprettypatch
-brew cask install qlstephen
-brew cask install quicklook-csv
-brew cask install quicklook-json
-brew cask install sequel-pro
 brew cask install skype
 brew cask install slack
-brew cask install sublime-text3
+brew cask install sublime
 brew cask install intellij-idea-ce
-brew cask install suspicious-package
-brew cask install webpquicklook
 brew cask install dropbox
-brew cask install viscosity
 brew cask install spotify
-
-mkdir -p ~/Library/LaunchAgents &> /dev/null
-
-ln -sfv /usr/local/opt/mysql56/*.plist ~/Library/LaunchAgents &> /dev/null
-ln -sfv /usr/local/opt/postgresql94/*.plist ~/Library/LaunchAgents &> /dev/null
-ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents &> /dev/null
-ln -sfv /usr/local/opt/memcached/*.plist ~/Library/LaunchAgents &> /dev/null
-
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql56.plist &> /dev/null
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql94.plist &> /dev/null
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist &> /dev/null
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.memcached.plist &> /dev/null
 
 brew cleanup &> /dev/null
 brew cask cleanup &> /dev/null
@@ -146,9 +122,6 @@ echo "+-------------------------+"
 echo "| Tuning up OS X...       |"
 echo "+-------------------------+"
 echo
-
-# Reload QuickLook plugins
-qlmanager -r
 
 # Disable press & hold keys for accents
 defaults write -g ApplePressAndHoldEnabled -bool false
